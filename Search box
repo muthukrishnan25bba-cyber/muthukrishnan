@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="w-full max-w-xl text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">Search the Portal</h1>
+        <p class="text-gray-500 mb-8">Enter your query below to search documentation and records.</p>
+
+        <form action="https://formsubmit.co/your-email@example.com" method="POST" class="w-full">
+            
+            <input type="text" name="_honey" style="display:none">
+            
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="relative flex items-center">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </div>
+                
+                <input type="text" name="Search Query" required
+                    class="block w-full pl-12 pr-32 py-4 bg-white border border-gray-200 rounded-full text-base shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                    placeholder="Type your search here...">
+                
+                <button type="submit" 
+                    class="absolute right-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full text-sm transition-colors cursor-pointer">
+                    Search
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
